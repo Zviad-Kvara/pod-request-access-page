@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Chivo", sans-serif;
+  padding: 0 24px;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(18, 23, 37, 0.8),
+      rgba(18, 23, 37, 0.8)
+    ),
+    url("./assets/mobile-img.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.8s !important;
+}
+
+header {
+  margin-top: 62px;
+}
+
+.podcast-div {
+  margin-top: 57px;
+}
+h1 {
+  color: #54e6af;
+  text-align: center;
+  font-size: 26px;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-weight: 400;
+  filter: opacity(0.8);
+}
+span {
+  color: #ffffff;
+}
+.podcast-paragraph {
+  margin-top: 16px;
+  color: #c2cbe5;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.logos-btns-div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.logos-div {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 33px;
+}
+.spotify-logo {
+  width: 56px;
+  height: 17px;
+}
+.apple-logo {
+  width: 45px;
+  height: 17px;
+}
+.google-logo {
+  width: 73px;
+  height: 11px;
+}
+.pocket-logo {
+  width: 77px;
+  height: 15px;
+}
+#email-input {
+  margin-top: 48px;
+  width: 327px;
+  height: 46px;
+  border-radius: 28px;
+  background: #2c344b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 32px;
+  font-family: "Chivo", sans-serif;
+  border: none;
+}
+#error {
+  color: #fb3e3e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 3px;
+}
+#error1 {
+  display: none;
+}
+button {
+  margin-top: 16px;
+  width: 326px;
+  height: 46px;
+  border-radius: 28px;
+  background: #54e6af;
+  border: none;
+  color: #121725;
+  font-size: 14px;
+  font-family: Chivo;
+  line-height: 28px;
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+  border-radius: 28px;
+  background: #b3ffe2;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
+}
+.dots-img {
+  display: none;
+}
+
+/* ----------------------Tablet Version------------------------- */
+@media screen and (min-width: 768px) {
+  .main-div {
+    background-image: url("./assets/tab-image.jpg");
+    background-position: right top;
+    background-size: 491px 767px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 39px;
+    background-color: #121725;
+  }
+  header {
+    margin-top: 50px;
+  }
+  .pod-btns-div {
+    background-color: #121725;
+    margin-top: 153px;
+    margin-right: 55px;
+  }
+
+  .podcast-div {
+    margin-top: 93px;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+
+  .podcast-paragraph {
+    margin-top: 31px;
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+    text-align: inherit;
+  }
+  .logos-btns-div {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .logos-div {
+    gap: 40px;
+    margin-top: 65px;
+  }
+  .spotify-logo {
+    width: 96px;
+    height: 29px;
+  }
+  .apple-logo {
+    width: 78px;
+    height: 29px;
+  }
+  .google-logo {
+    width: 125px;
+    height: 18px;
+  }
+  .pocket-logo {
+    width: 129px;
+    height: 26px;
+  }
+
+  .btn-input-div {
+    margin-top: 40px;
+    display: flex;
+    width: 427px;
+    height: 56px;
+  }
+  #email-input {
+    width: 427px;
+    height: 56px;
+    margin: 0;
+  }
+  #error1 {
+    display: block;
+    color: #fb3e3e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: start;
+    margin-top: 8px;
+    margin-left: 7%;
+  }
+  #error {
+    display: none;
+  }
+  button {
+    width: 162px;
+    height: 46px;
+    margin-left: -39%;
+    margin-top: 5px;
+  }
+
+  .dots-img {
+    display: block;
+    margin-top: 225px;
+  }
+}
+/* ----------------------------Desktop Version--------------- */
+@media screen and (min-width: 1440px) {
+  .main-div {
+    background-image: url("./assets/desktop-img.jpg");
+    background-position: right;
+    background-size: 888px 640px;
+    padding: 0 165px;
+  }
+  header {
+    margin-top: 205px;
+  }
+  .pod-btns-div {
+    margin-top: 113px;
+    width: 723px;
+    height: 509px;
+  }
+
+  .podcast-div {
+    margin-top: 93px;
+  }
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .podcast-paragraph {
+    margin-top: 24px;
+  }
+  .logos-btns-div {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .logos-div {
+    margin-top: 42px;
+  }
+  .spotify-logo {
+    width: 96px;
+    height: 29px;
+  }
+  .apple-logo {
+    width: 78px;
+    height: 29px;
+  }
+  .google-logo {
+    width: 125px;
+    height: 18px;
+  }
+  .pocket-logo {
+    width: 129px;
+    height: 26px;
+  }
+
+  #error1 {
+    display: block;
+    color: #fb3e3e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: start;
+    margin-top: 8px;
+    margin-left: 7%;
+  }
+
+  button:hover {
+    cursor: pointer;
+    border-radius: 28px;
+    background: #b3ffe2;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
+  }
+
+  .dots-img {
+    position: absolute;
+    right: 0;
+    bottom: 161px;
+  }
+}
